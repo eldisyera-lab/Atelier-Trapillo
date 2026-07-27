@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Trapillo | Curso Online de Bolsos Premium a Crochet</title>
+    <meta name="description" content="Aprende a tejer bolsos premium de trapillo con acabado profesional desde cero. Descubre técnicas avanzadas y patrones exclusivos paso a paso.">
+    <meta name="keywords" content="crochet, trapillo, bolsos de trapillo, tejer a crochet, curso de crochet, amigurumi, moda sostenible, hecho a mano">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Meta de Facebook e Instagram -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-usuario.github.io/crochet-afiliados/">
+    <meta property="og:title" content="Atelier Trapillo | Arte y Diseño en Trapillo">
+    <meta property="og:description" content="Crea bolsos de lujo hechos a mano. Masterclass online con técnicas profesionales paso a paso.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1590736704728-f4730bb30770?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Preconexiones y Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon SVG en linea para no depender de archivos externos -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧵</text></svg>">
+
+    <!-- Esquema JSON-LD para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Masterclass de Bolsos Premium en Trapillo",
+      "description": "Curso práctico paso a paso para aprender a tejer bolsos de alta calidad con acabados profesionales.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Atelier Trapillo"
+      }
+    }
+    </script>
+
+    <!-- ESTILOS COMPLETO (CSS3) -->
+    <style>
+        /* Variables Globales */
+        :root {
+            --color-bg: #FAF8F5;
+            --color-surface: #FFFFFF;
+            --color-text-main: #1A1A1A;
+            --color-text-muted: #666666;
+            --color-accent: #2C2A29;
+            --color-border: #E8E4DF;
+            --color-gold-subtle: #C5A059;
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Montserrat', -apple-system, sans-serif;
+            --transition-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        /* Reset Básico */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-main);
+            font-family: var(--font-body);
+            font-weight: 300;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            color: var(--color-text-main);
+        }
+
+        .text-center { text-align: center; }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .tagline {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--color-gold-subtle);
+            display: block;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        /* Botones */
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--color-text-main);
+            color: #FFFFFF;
+            padding: 1.1rem 2.2rem;
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 500;
+            border: 1px solid var(--color-text-main);
+            transition: all 0.4s var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--color-text-main);
+        }
+
+        .btn-large {
+            width: 100%;
+            max-width: 380px;
+            padding: 1.3rem 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Header */
+        .header {
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            background-color: rgba(250, 248, 245, 0.92);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid rgba(232, 228, 223, 0.5);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-logo {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            letter-spacing: 0.2em;
+            text-decoration: none;
+            color: var(--color-text-main);
+        }
+
+        .btn-nav {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            color: var(--color-text-main);
+            border-bottom: 1px solid var(--color-text-main);
+            padding-bottom: 2px;
+        }
+
+        /* Secciones */
+        .hero {
+            padding: 4rem 0 3rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 2.75rem;
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-subtitle {
+            color: var(--color-text-muted);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .trust-badge {
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .trust-badge .stars {
+            color: var(--color-gold-subtle);
+            letter-spacing: 2px;
+        }
+
+        .trust-text {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        .hero-media img {
+            border-radius: 2px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .video-showcase {
+            padding: 5rem 0;
+            background-color: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--color-border);
+        }
+
+        .benefits { padding: 6rem 0; }
+
+        .grid-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .benefit-card .icon {
+            font-size: 1.5rem;
+            color: var(--color-gold-subtle);
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .benefit-card p { font-size: 0.85rem; color: var(--color-text-muted); }
+
+        .gallery {
+            padding: 5rem 0;
+            background-color: var(--color-surface);
+        }
+
+        .carousel-container {
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            overflow: hidden;
+            touch-action: pan-y;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s var(--transition-smooth);
+        }
+
+        .carousel-slide { min-width: 100%; }
+        .carousel-slide img { width: 100%; height: 450px; object-fit: cover; }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--color-border);
+            width: 44px;
+            height: 44px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+            transition: background 0.3s;
+        }
+
+        .carousel-btn:hover { background: #FFFFFF; }
+        .carousel-btn.prev { left: 10px; }
+        .carousel-btn.next { right: 10px; }
+
+        .curriculum { padding: 6rem 0; }
+
+        .grid-modules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .module-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            transition: transform 0.3s ease;
+        }
+
+        .module-card:hover { transform: translateY(-4px); }
+        .module-card img { height: 220px; width: 100%; object-fit: cover; }
+        .module-body { padding: 1.5rem; }
+        .module-body span { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-gold-subtle); }
+        .module-body h3 { font-size: 1.3rem; margin: 0.5rem 0; }
+        .module-body p { font-size: 0.85rem; color: var(--color-text-muted); }
+
+        .testimonials {
+            padding: 5rem 0;
+            background-color: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .grid-testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            padding: 2.5rem;
+            background-color: var(--color-bg);
+            border: 1px solid var(--color-border);
+        }
+
+        .testimonial-card p {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 1.2rem;
+        }
+
+        .testimonial-card cite {
+            font-style: normal;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-text-muted);
+        }
+
+        .guarantee { padding: 4rem 0; }
+
+        .guarantee-box {
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            padding: 3rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+        }
+
+        .guarantee-badge {
+            border: 1px solid var(--color-gold-subtle);
+            color: var(--color-gold-subtle);
+            padding: 0.8rem 1.2rem;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+        }
+
+        .faq { padding: 4rem 0 6rem; }
+        .faq-accordion { max-width: 750px; margin: 2rem auto 0; }
+        .faq-item { border-bottom: 1px solid var(--color-border); padding: 1.2rem 0; }
+
+        .faq-item summary {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 2rem;
+        }
+
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: "+"; position: absolute; right: 0; font-size: 1.2rem; font-weight: 300; }
+        .faq-item[open] summary::after { content: "—"; }
+        .faq-item p { margin-top: 0.75rem; font-size: 0.9rem; color: var(--color-text-muted); }
+
+        .final-cta {
+            padding: 6rem 0;
+            background-color: var(--color-accent);
+            color: #FFFFFF;
+        }
+
+        .final-cta h2 { color: #FFFFFF; font-size: 2.5rem; margin-bottom: 1rem; }
+        .final-cta p { color: #CCCCCC; margin-bottom: 2.5rem; }
+
+        .pricing-card {
+            background-color: var(--color-surface);
+            color: var(--color-text-main);
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 2.5rem;
+        }
+
+        .price-notice {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.8rem;
+            color: var(--color-gold-subtle) !important;
+        }
+
+        .payment-security {
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+        }
+
+        .floating-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+            z-index: 99;
+            display: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-floating {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: var(--color-text-main);
+            color: #FFFFFF;
+            padding: 0.9rem;
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+
+        .footer {
+            padding: 4rem 0 6rem;
+            background-color: var(--color-bg);
+            border-top: 1px solid var(--color-border);
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        .copyright { margin: 1rem 0 0.5rem; }
+        .disclaimer { font-size: 0.7rem; max-width: 600px; margin: 0 auto; opacity: 0.7; }
+
+        @media (min-width: 768px) {
+            .hero { grid-template-columns: 1fr 1fr; padding: 6rem 0; }
+            .guarantee-box { flex-direction: row; text-align: left; }
+            .carousel-slide img { height: 550px; }
+        }
+
+        @media (max-width: 767px) {
+            .floating-cta { display: block; }
+            body { padding-bottom: 60px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="brand-logo">ATELIER TRAPILLO</a>
+            <a href="#checkout" class="btn-nav">Unirme al Atelier</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero -->
+        <section class="hero container">
+            <div class="hero-content">
+                <span class="tagline">Edición Formativa Online</span>
+                <h1 class="hero-title">Crea bolsos premium de trapillo con acabado profesional</h1>
+                <p class="hero-subtitle">Domina las técnicas de tejido de alta costura artesanal desde cero, a tu propio ritmo y desde cualquier dispositivo.</p>
+                <div class="hero-actions">
+                    <a href="#checkout" class="btn-primary">Quiero aprender ahora</a>
+                    <div class="trust-badge">
+                        <span class="stars">★★★★★</span>
+                        <span class="trust-text">Garantía de satisfacción y soporte guiado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770?auto=format&fit=crop&w=800&q=80" alt="Bolso artesanal de trapillo con acabado elegante" width="600" height="700" loading="eager">
+            </div>
+        </section>
+
+        <!-- 2. Video Showcase -->
+        <section class="video-showcase">
+            <div class="container text-center">
+                <h2 class="section-title">El arte del detalle</h2>
+                <p class="section-subtitle">Aprende la estructura, tensión y cierres perfectos que marcan la diferencia entre una pieza aficionada y un bolso boutique.</p>
+                <div class="video-wrapper">
+                    <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" class="video-player">
+                        <source src="assets/preview-bolsos.mp4" type="video/mp4">
+                        Tu navegador no soporta reproducción de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Beneficios -->
+        <section class="benefits container">
+            <div class="grid-benefits">
+                <div class="benefit-card">
+                    <div class="icon">✧</div>
+                    <h3>Paso a Paso Garantizado</h3>
+                    <p>Lecciones explicadas a detalle sin asumir conocimientos previos.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">◈</div>
+                    <h3>Patrones e Instructivos</h3>
+                    <p>Guías descargables para replicar cada modelo sin margen de error.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">⟡</div>
+                    <h3>Técnicas de Acabado Premium</h3>
+                    <p>Aprende a colocar forros, herrajes, broches e inserción de asas elegantes.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">✦</div>
+                    <h3>Acceso Vitalicio</h3>
+                    <p>Estudia a tu ritmo, cuándo y dónde quieras, sin límites de tiempo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Galería / Carrusel -->
+        <section class="gallery">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Colección de Diseños</h2>
+                    <p class="section-subtitle">Estructuras firmes, puntadas alineadas y piezas con presencia de marca.</p>
+                </div>
+                <div class="carousel-container" id="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="Bolso de mano estilo Tote de trapillo" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=800&q=80" alt="Bolso estilo bandolera tejido" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="Clutch artesanal para eventos" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                    <button class="carousel-btn next" aria-label="Siguiente">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Módulos -->
+        <section class="curriculum container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Lo que lograrás tejer</h2>
+            </div>
+            <div class="grid-modules">
+                <article class="module-card">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Módulo 1" loading="lazy">
+                    <div class="module-body">
+                        <span>Módulo 01</span>
+                        <h3>Fundamentos y Selección de Trapillo</h3>
+                        <p>Domina los tipos de hebra, elasticidad y selección del ganchillo ideal para no deformar tus tejidos.</p>
+                    </div>
+                </article>
+                <article class="module-card">
+                    <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=600&q=80" alt="Módulo 2" loading="lazy">
+                    <div class="module-body">
+                        <span>Módulo 02</span>
+                        <h3>Bases Firmes y Puntadas de Tendencia</h3>
+                        <p>Técnicas de tensión correcta para lograr rigidez limpia sin necesidad de rellenos endebles.</p>
+                    </div>
+                </article>
+                <article class="module-card">
+                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Módulo 3" loading="lazy">
+                    <div class="module-body">
+                        <span>Módulo 03</span>
+                        <h3>Ensamblado, Herrajes y Alta Mercería</h3>
+                        <p>Aplica cadenas, cierres imantados, asas de cuero y forros de tela para transformar una labor en una pieza de boutique.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 6. Testimonios -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title text-center">Experiencias del Atelier</h2>
+                <div class="grid-testimonials">
+                    <blockquote class="testimonial-card">
+                        <p>"El nivel de detalle en los acabados marca una diferencia brutal. Mis bolsos ahora se ven con estructura firme, iguales a los de tiendas de marca."</p>
+                        <cite>— María P., Alumna del Programa</cite>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>"Pensé que por ser principiante me costaría lograr la tensión correcta, pero la explicación paso a paso hace que todo sea súper fluido."</p>
+                        <cite>— Elena R., Diseñadora Artesanal</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Garantía -->
+        <section class="guarantee container">
+            <div class="guarantee-box">
+                <div class="guarantee-badge">7 DÍAS</div>
+                <div class="guarantee-text">
+                    <h3>Garantía Incondicional de Satisfacción</h3>
+                    <p>Prueba el contenido sin riesgo. Si dentro de los primeros 7 días el curso no supera tus expectativas, Hotmart te devuelve el 100% de tu inversión sin preguntas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FAQ -->
+        <section class="faq container">
+            <h2 class="section-title text-center">Preguntas Frecuentes</h2>
+            <div class="faq-accordion">
+                <details class="faq-item">
+                    <summary>¿Necesito experiencia previa tejiendo?</summary>
+                    <p>No. La formación guía desde cómo tomar la aguja y controlar la tensión de la hebra hasta los acabados más sofisticados.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué materiales necesito para comenzar?</summary>
+                    <p>Solo necesitarás un ganchillo adecuado y trapillo (el curso incluye una guía recomendada para elegir los mejores insumos en tu país).</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cómo y cuándo accedo al curso?</summary>
+                    <p>El acceso es inmediato tras confirmarse el pago. Recibirás las credenciales en tu correo para entrar desde cualquier teléfono, tablet o computadora.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Los patrones están incluidos?</summary>
+                    <p>Sí, dispondrás de los esquemas y medidas precisas descargables dentro de la plataforma.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- 9. CTA Final -->
+        <section class="final-cta" id="checkout">
+            <div class="container text-center">
+                <span class="tagline">Comienza Hoy Mismo</span>
+                <h2>Transforma tu ovillo en una obra de arte</h2>
+                <p>Acceso inmediato y de por vida a la formación completa con todos los módulos y patrones.</p>
+                <div class="pricing-card">
+                    <p class="price-notice">Inscripción Abierta</p>
+                    
+                    <!-- REEMPLAZA ESTE ENLACE CON TU CHECKOUT DE HOTMART -->
+                    <a href="https://pay.hotmart.com/TU_CODIGO_DE_AFILIADO?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-primary btn-large">
+                        Inscribirme a la Masterclass
+                    </a>
+                    
+                    <div class="payment-security">
+                        <span>🔒 Pago 100% seguro procesado por Hotmart</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botón Flotante Móvil -->
+    <div class="floating-cta">
+        <a href="#checkout" class="btn-floating">Inscribirme Ahora</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="brand-logo">ATELIER TRAPILLO</p>
+            <p class="copyright">© 2026 Atelier Trapillo. Todos los derechos reservados.</p>
+            <p class="disclaimer">Este sitio no está afiliado a Meta Platforms, Inc. ni a sus entidades. Todos los productos y contenidos son ofrecidos bajo la plataforma de Hotmart®.</p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVIDAD (JavaScript) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            /* Carrusel con Navegación y Swipe Táctil */
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track ? track.children : []);
+            const nextBtn = document.querySelector('.carousel-btn.next');
+            const prevBtn = document.querySelector('.carousel-btn.prev');
+
+            if (track && slides.length > 0) {
+                let currentIndex = 0;
+                let startX = 0;
+                let isDragging = false;
+
+                const updateCarousel = (index) => {
+                    track.style.transform = `translateX(-${index * 100}%)`;
+                };
+
+                nextBtn?.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % slides.length;
+                    updateCarousel(currentIndex);
+                });
+
+                prevBtn?.addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                    updateCarousel(currentIndex);
+                });
+
+                // Soporte táctil para móvil
+                track.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                }, { passive: true });
+
+                track.addEventListener('touchend', (e) => {
+                    if (!isDragging) return;
+                    const endX = e.changedTouches[0].clientX;
+                    const diffX = startX - endX;
+
+                    if (Math.abs(diffX) > 40) {
+                        if (diffX > 0 && currentIndex < slides.length - 1) {
+                            currentIndex++;
+                        } else if (diffX < 0 && currentIndex > 0) {
+                            currentIndex--;
+                        }
+                        updateCarousel(currentIndex);
+                    }
+                    isDragging = false;
+                });
+            }
+
+            /* Ocultar botón flotante cuando la sección de compra sea visible */
+            const floatingCta = document.querySelector('.floating-cta');
+            const checkoutSection = document.getElementById('checkout');
+
+            if (floatingCta && checkoutSection) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            floatingCta.style.opacity = '0';
+                            floatingCta.style.pointerEvents = 'none';
+                        } else {
+                            floatingCta.style.opacity = '1';
+                            floatingCta.style.pointerEvents = 'auto';
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                observer.observe(checkoutSection);
+            }
+
+            /* Scroll Suave */
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
